@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.getElementById("navLinks");
   const navContainer = document.querySelector(".nav-container");
 
+  // Handle click on mobile menu button
   mobileMenuBtn.addEventListener("click", () => {
     navContainer.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
     const icon = mobileMenuBtn.querySelector("i");
     if (navContainer.classList.contains("active")) {
       icon.classList.remove("fa-bars");
@@ -18,11 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Close menu and modals when link is clicked
-  document.querySelectorAll(".nav-links a").forEach((link) => {
+  // Close menu and remove scroll lock when a link is clicked
+  const navItems = navLinks.querySelectorAll("a");
+  navItems.forEach((link) => {
     link.addEventListener("click", () => {
       // 1. Close mobile menu
       navContainer.classList.remove("active");
+      document.body.classList.remove("menu-open");
       const icon = mobileMenuBtn.querySelector("i");
       icon.classList.remove("fa-times");
       icon.classList.add("fa-bars");
@@ -76,7 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 4. Active Link Highlighting
   const sections = document.querySelectorAll("section");
-  const navItems = document.querySelectorAll(".nav-links a");
 
   window.addEventListener("scroll", () => {
     let current = "";
@@ -786,4 +789,82 @@ document.addEventListener("DOMContentLoaded", () => {
       testimonials[currentTestimonialIndex].classList.add("active");
     }, 10);
   };
+  // 9. Browser Back Button Modal Handling
+  // Helper to check if any modal is open
+  function isAnyModalOpen() {
+    const modals = [
+      document.getElementById("courseDetailsModal"),
+      document.getElementById("courseCurriculumModal"),
+      document.getElementById("imageModal"),
+      document.querySelector(".nav-container"),
+    ];
+    return modals.some(
+      (m) =>
+        m && (m.style.display === "block" || m.classList.contains("active")),
+    );
+  }
+
+  // Unified close function
+  window.closeAllModals = function () {
+    // 1. Close Modals
+    if (window.closeDetailsModal) window.closeDetailsModal();
+    if (window.closeCurriculumModal) window.closeCurriculumModal();
+    if (window.closeModal) window.closeModal();
+
+    // 2. Close Mobile Menu
+    const navContainer = document.querySelector(".nav-container");
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    if (navContainer && navContainer.classList.contains("active")) {
+      navContainer.classList.remove("active");
+      document.body.classList.remove("menu-open");
+      const icon = mobileMenuBtn.querySelector("i");
+      if (icon) {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+      }
+    }
+
+    document.body.style.overflow = "auto"; // Global restore
+  };
+
+  // Listen for back button
+  window.addEventListener("popstate", (event) => {
+    if (isAnyModalOpen()) {
+      window.closeAllModals();
+    }
+  });
+
+  // Updated Open Functions to push history state
+  const originalOpenDetails = window.openCourseDetails;
+  window.openCourseDetails = function (category) {
+    history.pushState({ modal: "details" }, "");
+    originalOpenDetails(category);
+  };
+
+  const originalOpenCurriculum = window.openCourseCurriculum;
+  window.openCourseCurriculum = function (courseName, categoryTitle) {
+    // If opening from details, we don't necessarily need another pushState
+    // depending on if we want "back" to go to details or home.
+    // For now, let's keep it simple: one state for "some modal is open".
+    if (!isAnyModalOpen()) {
+      history.pushState({ modal: "curriculum" }, "");
+    }
+    originalOpenCurriculum(courseName, categoryTitle);
+  };
+
+  const originalOpenImage = window.openModal;
+  window.openModal = function (src) {
+    history.pushState({ modal: "image" }, "");
+    originalOpenImage(src);
+  };
+
+  // Handle mobile menu history state
+  mobileMenuBtn.addEventListener("click", () => {
+    if (!navContainer.classList.contains("active")) {
+      history.pushState({ modal: "menu" }, "");
+    } else {
+      // If closing manually, we could theoretically go back in history,
+      // but toggle logic usually handles this.
+    }
+  });
 });

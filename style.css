@@ -22,6 +22,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: var(--text-main);
@@ -87,6 +91,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .logo a {
@@ -681,15 +686,27 @@ h5 {
   }
 
   .slider-btn {
-    display: none;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    opacity: 0.8;
   }
 
   .testimonial-focused {
-    padding: 0;
+    padding: 0 10px;
   }
 
   .testimonial-text {
     font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .testimonial-stars {
+    margin-bottom: 20px;
+  }
+
+  .testimonial-author {
+    justify-content: center;
   }
 }
 
@@ -1047,36 +1064,61 @@ footer {
   }
 
   .nav-container {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 70px; /* Adjust based on navbar height */
     left: 0;
     width: 100%;
-    background: var(--bg-white);
+    height: calc(100vh - 70px);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     flex-direction: column;
-    padding: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
-    border-top: 1px solid #f1f5f9;
+    padding: 20px 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    visibility: hidden;
+    overflow-y: auto;
+    display: flex;
+    z-index: 4000;
   }
 
   .nav-container.active {
-    max-height: 500px;
+    transform: translateX(0);
+    visibility: visible;
   }
 
   .nav-links {
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
     width: 100%;
+    padding: 0;
   }
 
   .nav-links a {
     margin: 0;
-    padding: 15px 40px;
-    border-bottom: 1px solid #f8fafc;
-    font-size: 15px;
+    padding: 18px 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links a::after {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 12px;
+    opacity: 0.3;
+  }
+
+  .nav-links a.active {
+    background: rgba(30, 58, 138, 0.05);
+    color: #a83232;
   }
 
   .hero-name-main {
@@ -1090,19 +1132,34 @@ footer {
 
   .nav-icons {
     border-left: none;
-    margin: 0;
-    padding: 20px 40px;
+    margin-top: auto;
+    padding: 30px 40px;
     justify-content: flex-start;
-    border-top: 1px solid #f1f5f9;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
     width: 100%;
+    gap: 25px;
   }
 
   .nav-icons i {
-    margin: 0 30px 0 0;
+    margin: 0;
+    font-size: 20px;
+    color: var(--primary-dark-blue);
+  }
+
+  .navbar-content {
+    flex-direction: row; /* Logo on right, hamburger on left */
+    justify-content: space-between;
   }
 
   .mobile-menu-btn {
     display: block;
+    order: -1; /* Move to left */
+    margin-right: auto;
+  }
+
+  .logo {
+    order: 1; /* Move to right */
+    margin-left: auto;
   }
 
   .logo-main {
@@ -1117,45 +1174,39 @@ footer {
     height: 40px;
   }
 
-  .hero-card h1 {
+  .hero-name-main {
     font-size: 38px;
+    letter-spacing: -0.5px;
   }
 
-  .hero-tagline {
-    font-size: 18px;
-  }
-
-  .hero-btns {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .btn-secondary {
-    margin-left: 0;
+  .hero-name-sub {
+    font-size: 14px;
+    letter-spacing: 3px;
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 28px;
+    letter-spacing: 3px !important;
   }
 
   .about-title {
     align-items: center;
     text-align: center;
+    gap: 5px;
   }
 
   .title-main {
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 800;
   }
 
   .title-sub {
-    font-size: 18px;
-    letter-spacing: 1px;
+    font-size: 14px;
+    letter-spacing: 2px;
   }
 
   .about-accent-line {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 25px;
   }
 
   .courses-grid {
