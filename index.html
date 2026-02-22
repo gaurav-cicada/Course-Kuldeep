@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sai Academy - Striving for Excellence, Empowering Futures</title>
+    <title>
+      Sai Accountables Educational Training Institution - Striving for
+      Excellence, Empowering Futures
+    </title>
     <meta
       name="description"
-      content="Sai Academy in Mangalore offers industry-leading training in SAP, IT, Data Analytics, and Financial Accounting. Bridge the gap between education and industry."
+      content="Sai Accountables Educational Training Institution in Mangalore offers industry-leading training in SAP, IT, Data Analytics, and Financial Accounting. Bridge the gap between education and industry."
     />
     <link rel="stylesheet" href="style.css" />
     <!-- Google Fonts -->
@@ -30,9 +33,12 @@
           <a href="#home">
             <img
               src="images/accountables logo (2)_page-0001.jpg"
-              alt="Sai Academy Logo"
+              alt="Sai Accountables Educational Training Institution Logo"
             />
-            Sai <span>Academy</span>
+            <div class="logo-text">
+              <span class="logo-main">Sai Accountables</span>
+              <span class="logo-sub">Educational Training Institution</span>
+            </div>
           </a>
         </div>
         <div class="nav-container">
@@ -60,13 +66,12 @@
     <section id="home" class="hero">
       <div class="hero-overlay"></div>
       <div class="hero-card">
-        <h1 class="brand-font">Sai Academy</h1>
+        <h1 class="hero-title">
+          <span class="hero-name-main">Sai Accountables</span>
+          <span class="hero-name-sub">Educational Training Institution</span>
+        </h1>
         <div class="hero-divider"></div>
         <p class="hero-tagline">Striving for Excellence, Empowering Futures</p>
-        <div class="hero-btns">
-          <a href="#courses" class="btn btn-primary">Our Courses</a>
-          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-        </div>
       </div>
     </section>
 
@@ -75,94 +80,58 @@
       <div class="container grid-2">
         <div class="about-image reveal-left">
           <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000"
-            alt="Students at Sai Academy"
+            src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1000"
+            alt="Sai Accountables Educational Training Institution Lab"
           />
         </div>
         <div class="about-text reveal-right">
-          <span class="section-tag">About Us</span>
-          <h2>
-            Bridging the gap between <span>Industry Standards</span> and
-            Learners
+          <h2 class="about-title">
+            <span class="title-main">About Sai Accountables</span>
+            <span class="title-sub">Educational Training Institution</span>
           </h2>
-          <p>
-            Established in 2015, Sai Academy is an ISO 9001-2015 certified
-            institution dedicated to creating, developing, delivering, and
-            accrediting high-quality, internationally recognized courses.
+          <div class="about-accent-line"></div>
+          <p class="about-description">
+            Sai Accountables Educational Training Institution is a premier
+            educational institution dedicated to bridging the gap between
+            industry-standard practices and learners by offering specialized
+            training programs. Our comprehensive courses cover fields like
+            business, finance, technology, and artificial intelligence, ensuring
+            learners are well-equipped for professional success. We partner with
+            esteemed organizations such as EME, SAP Student Program, Winstud,
+            Active Edu, colleges, and banks to deliver unparalleled educational
+            experiences. With a focus on excellence and empowerment, we prepare
+            individuals for the dynamic world of the 21st-century workforce.
           </p>
-          <p>
-            Our vocational courses are designed to not only prepare students for
-            employment but also to foster self-confidence and entrepreneurial
-            capabilities. We connect you with current industry demands through
-            hands-on learning and personalized mentorship.
-          </p>
-          <ul class="about-list">
-            <li>
-              <i class="fas fa-check-circle"></i> Industry-aligned Curriculum
-            </li>
-            <li><i class="fas fa-check-circle"></i> Expert Trainers</li>
-            <li>
-              <i class="fas fa-check-circle"></i> Practical Training Sessions
-            </li>
-          </ul>
         </div>
       </div>
     </section>
 
     <!-- Courses Section -->
-    <section id="courses" class="section bg-light">
+    <section id="courses" class="section courses-dark-section">
       <div class="container text-center">
-        <span class="section-tag">Learning Programs</span>
-        <h2 class="section-title">Our Featured <span>Courses</span></h2>
-        <div class="courses-grid">
+        <h2 class="courses-heading">COURSES</h2>
+        <div class="courses-divider"></div>
+        <div class="courses-minimal-grid">
           <!-- Financial/Accounting -->
-          <div class="course-card fade-in">
-            <div class="course-icon"><i class="fas fa-calculator"></i></div>
+          <div
+            class="course-minimal-card fade-in"
+            onclick="openCourseDetails('financial')"
+          >
             <h3>Financial/Accounting Courses</h3>
-            <p>
-              Professional training in global accounting standards and software.
-            </p>
-            <ul class="course-list">
-              <li>SAP FICO</li>
-              <li>TallyPrime</li>
-              <li>QuickBooks</li>
-              <li>Peachtree (Sage 50)</li>
-            </ul>
-            <a href="#contact" class="course-link"
-              >Enquire Now <i class="fas fa-arrow-right"></i
-            ></a>
           </div>
           <!-- IT and Data Analytics -->
-          <div class="course-card fade-in delay-1">
-            <div class="course-icon"><i class="fas fa-chart-line"></i></div>
-            <h3>IT and Data Analytics</h3>
-            <p>
-              Specialist programs for modern technical and data-driven roles.
-            </p>
-            <ul class="course-list">
-              <li>Python Programming</li>
-              <li>Power BI & SQL</li>
-              <li>Microsoft Office Specialist (MOS)</li>
-              <li>Advanced Excel</li>
-            </ul>
-            <a href="#contact" class="course-link"
-              >Enquire Now <i class="fas fa-arrow-right"></i
-            ></a>
+          <div
+            class="course-minimal-card fade-in delay-1"
+            onclick="openCourseDetails('it')"
+          >
+            <h3>IT and Data Analytics Specialist Program</h3>
           </div>
           <!-- Generic Courses -->
-          <div class="course-card fade-in delay-2">
-            <div class="course-icon"><i class="fas fa-laptop-code"></i></div>
+          <div
+            class="course-minimal-card fade-in delay-2"
+            onclick="openCourseDetails('generic')"
+          >
             <h3>Generic Courses</h3>
-            <p>Broader professional skill sets for workplace productivity.</p>
-            <ul class="course-list">
-              <li>Basic Computer Skills</li>
-              <li>Digital Literacy</li>
-              <li>Graphic Designing Basics</li>
-              <li>Soft Skills Training</li>
-            </ul>
-            <a href="#contact" class="course-link"
-              >Enquire Now <i class="fas fa-arrow-right"></i
-            ></a>
           </div>
         </div>
       </div>
@@ -172,47 +141,71 @@
     <section id="services" class="section">
       <div class="container">
         <div class="text-center">
-          <span class="section-tag">What We Offer</span>
-          <h2 class="section-title">Our <span>Services</span></h2>
+          <h2 class="section-title" style="letter-spacing: 5px">SERVICES</h2>
+          <div class="services-main-divider"></div>
         </div>
         <div class="services-grid mt-4">
           <div class="service-item reveal-up">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400"
+                alt="One-to-One Training"
+              />
+            </div>
             <div class="service-content">
-              <i class="fas fa-user-friends"></i>
               <h4>One-to-One Training</h4>
               <p>
                 Personalized computer training sessions tailored to individual
-                learning needs, available both offline and online.
+                learning needs. Available both offline (in-person) and online
+                for your convenience.
               </p>
             </div>
           </div>
           <div class="service-item reveal-up delay-1">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1521791136064-7986c2923216?auto=format&fit=crop&q=80&w=400"
+                alt="Mock Interviews"
+              />
+            </div>
             <div class="service-content">
-              <i class="fas fa-briefcase"></i>
-              <h4>Mock Interviews</h4>
+              <h4>Mock Interviews & Industry Exposure</h4>
               <p>
-                Real-time project discussions and mock interview sessions to
-                stay in touch with current industry trends.
+                Get interview-ready with mock interview sessions and real-time
+                project discussions to stay in touch with current industry
+                trends and practices.
               </p>
             </div>
           </div>
           <div class="service-item reveal-up delay-2">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=400"
+                alt="College Training Programs"
+              />
+            </div>
             <div class="service-content">
-              <i class="fas fa-university"></i>
-              <h4>College Programs</h4>
+              <h4>College Training Programs</h4>
               <p>
-                Specially designed modules for college students to enhance
-                technical skills and boost employability.
+                Specially designed training modules for college students to
+                enhance their technical skills and boost employability through
+                hands-on learning.
               </p>
             </div>
           </div>
           <div class="service-item reveal-up delay-3">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=400"
+                alt="Bank & Corporate Training"
+              />
+            </div>
             <div class="service-content">
-              <i class="fas fa-building"></i>
-              <h4>Corporate Training</h4>
+              <h4>Bank & Corporate Training</h4>
               <p>
-                Customized solutions for banks and corporate teams focusing on
-                productivity tools and digital literacy.
+                Customized training solutions for banks and corporate teams,
+                focusing on productivity tools, professional software, and
+                digital literacy tailored to organizational goals.
               </p>
             </div>
           </div>
@@ -220,62 +213,102 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section bg-light">
+    <section id="testimonials" class="section bg-dark-blue">
       <div class="container">
         <div class="text-center">
-          <span class="section-tag">Success Stories</span>
-          <h2 class="section-title">What Our <span>Students Say</span></h2>
+          <h2 class="section-title text-white" style="letter-spacing: 5px">
+            TESTIMONIALS
+          </h2>
+          <div class="services-main-divider"></div>
         </div>
-        <div class="testimonials-slider mt-4">
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i>
+
+        <div class="testimonial-slider-wrapper">
+          <button class="slider-btn prev-btn" onclick="moveSlider(-1)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="testimonial-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-focused active" data-index="0">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="testimonial-quote-box">
+                <i class="fas fa-quote-left quote-icon-left"></i>
+                <p class="testimonial-text">
+                  I recently completed the Microsoft Office Specialist (MOS) and
+                  Power BI course at Sai Accountables. I'm impressed with the
+                  comprehensive coverage of the topics and the hands-on
+                  experience provided. The instructors were knowledgeable and
+                  supportive throughout the course. Highly recommend it!
+                </p>
+                <i class="fas fa-quote-right quote-icon-right"></i>
+              </div>
+              <div class="testimonial-accent-line"></div>
+              <div class="testimonial-author">
+                <span class="author-name">Gaurav</span>
+              </div>
             </div>
-            <p>
-              "Learning SAP MM at EnerTech Academy was one of the best decisions
-              I made. The classes were interactive, and the trainer was
-              supportive. Thank you for an amazing experience!"
-            </p>
-            <div class="testimonial-info">
-              <h5>Mohammed Rahid</h5>
-              <span>SAP Student</span>
+
+            <!-- Testimonial 2 -->
+            <div
+              class="testimonial-focused"
+              data-index="1"
+              style="display: none"
+            >
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="testimonial-quote-box">
+                <i class="fas fa-quote-left quote-icon-left"></i>
+                <p class="testimonial-text">
+                  The Tally Prime and GST training here is outstanding. The
+                  practical approach to accounting and real-world scenarios
+                  helped me secure a job within weeks of completion. Best
+                  academy for finance professionals!
+                </p>
+                <i class="fas fa-quote-right quote-icon-right"></i>
+              </div>
+              <div class="testimonial-accent-line"></div>
+              <div class="testimonial-author">
+                <span class="author-name">Mohammed Rahid</span>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div
+              class="testimonial-focused"
+              data-index="2"
+              style="display: none"
+            >
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="testimonial-quote-box">
+                <i class="fas fa-quote-left quote-icon-left"></i>
+                <p class="testimonial-text">
+                  Excellent Python and Data Analytics course. The project-based
+                  learning module made complex concepts easy to understand. The
+                  faculty's expertise is truly remarkable. Great place to learn!
+                </p>
+                <i class="fas fa-quote-right quote-icon-right"></i>
+              </div>
+              <div class="testimonial-accent-line"></div>
+              <div class="testimonial-author">
+                <span class="author-name">Priyanka S.</span>
+              </div>
             </div>
           </div>
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i>
-            </div>
-            <p>
-              "I recently completed the MOS and Power BI course. I'm impressed
-              with the comprehensive coverage and hands-on experience. The
-              instructors were knowledgeable throughout."
-            </p>
-            <div class="testimonial-info">
-              <h5>Merita Mohan</h5>
-              <span>MOS & Power BI</span>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i>
-            </div>
-            <p>
-              "Highly recommend Enertech for QuickBooks and Peachtree. The
-              faculty is polite and makes sure you grasp the concepts. Flexible
-              timings are a huge advantage."
-            </p>
-            <div class="testimonial-info">
-              <h5>Priyanka S.</h5>
-              <span>Accounting Student</span>
-            </div>
-          </div>
+
+          <button class="slider-btn next-btn" onclick="moveSlider(1)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -376,76 +409,60 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-      <div class="container grid-2">
-        <div class="contact-info">
-          <span class="section-tag">Get In Touch</span>
-          <h2>Contact <span>Information</span></h2>
-          <p>
-            Have questions about our courses or training programs? Our team is
-            ready to help you choose the right path for your career.
-          </p>
-
-          <div class="contact-card">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <h4>Address</h4>
-              <p>
-                Inland Avenue, Ballalbagh, Lalbagh, Mangaluru, Karnataka, India
-              </p>
-            </div>
-          </div>
-          <div class="contact-card">
-            <i class="fas fa-phone-alt"></i>
-            <div>
-              <h4>Phone</h4>
-              <p>+91-7353726222 / 6363435840</p>
-            </div>
-          </div>
-          <div class="contact-card">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <p>info@enertechacademy.com</p>
-            </div>
-          </div>
-          <div class="contact-card">
-            <i class="fas fa-clock"></i>
-            <div>
-              <h4>Working Hours</h4>
-              <p>Mon-Sat: 08:00 AM - 04:30 PM</p>
-            </div>
-          </div>
+    <section id="contact" class="section bg-dark-blue">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title text-white" style="letter-spacing: 5px">
+            CONTACT
+          </h2>
+          <div class="services-main-divider"></div>
         </div>
-        <div class="contact-form-container">
-          <form class="contact-form">
-            <div class="form-group">
-              <label>Full Name</label>
-              <input type="text" placeholder="Your Name" required />
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form-new">
+            <div class="form-row-triple">
+              <input type="text" placeholder="Name" required />
+              <input type="text" placeholder="Phone" required />
+              <input type="email" placeholder="Email address" required />
             </div>
-            <div class="form-group">
-              <label>Email Address</label>
-              <input type="email" placeholder="Your Email" required />
+            <div class="form-row-full">
+              <textarea rows="4" placeholder="Message"></textarea>
             </div>
-            <div class="form-group">
-              <label>Course of Interest</label>
-              <select>
-                <option>Select a Course</option>
-                <option>Financial/Accounting (SAP, Tally)</option>
-                <option>IT & Data Analytics (Python, Power BI)</option>
-                <option>MOS Certification</option>
-                <option>Other Services</option>
-              </select>
+            <div class="form-submit-container">
+              <button type="submit" class="btn-red-contact">CONTACT US</button>
             </div>
-            <div class="form-group">
-              <label>Message</label>
-              <textarea rows="4" placeholder="How can we help you?"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">
-              Send Message
-            </button>
           </form>
+        </div>
+
+        <div class="contact-footer-grid">
+          <div class="contact-details-left">
+            <p class="address-text">
+              Inland Avenue, Ballalbagh, Lalbagh, Mangaluru, Karnataka, India
+            </p>
+            <div class="contact-item-row">
+              <i class="fas fa-phone-alt"></i>
+              <span>+91-7353726222 - 6363435840</span>
+            </div>
+            <div class="contact-item-row">
+              <i class="fas fa-envelope"></i>
+              <span>info@enertechacademy.com</span>
+            </div>
+            <div class="contact-item-row">
+              <i class="fas fa-clock"></i>
+              <span>Mon-Sat - 08:00-16:30</span>
+            </div>
+          </div>
+          <div class="contact-map-right">
+            <iframe
+              src="https://maps.google.com/maps?q=Inland%20Avenue,Ballalbagh,Lalbagh,Mangaluru,Karnataka,India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="250"
+              style="border: 0; border-radius: 4px"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -455,7 +472,10 @@
       <div class="container">
         <div class="footer-grid">
           <div class="footer-about">
-            <h3>Sai <span>Academy</span></h3>
+            <h3>
+              Sai Accountables
+              <span>Educational Training Institution</span>
+            </h3>
             <p>
               ISO 9001-2015 certified institution empowering students through
               vocational training and practical industry exposure.
@@ -489,17 +509,47 @@
         </div>
         <div class="footer-bottom">
           <p>
-            &copy; 2026 Sai Academy. All Rights Reserved. Built with excellence.
+            &copy; 2026 Sai Accountables Educational Training Institution. All
+            Rights Reserved. Built with excellence.
           </p>
         </div>
       </div>
     </footer>
+
+    <!-- Course Details Modal -->
+    <div id="courseDetailsModal" class="details-modal">
+      <div class="details-modal-content">
+        <span class="close-details-modal" onclick="closeDetailsModal()"
+          >&times;</span
+        >
+        <div id="detailsContent">
+          <!-- Content injected via JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Curriculum Modal -->
+    <div id="courseCurriculumModal" class="curriculum-modal">
+      <div class="curriculum-modal-content">
+        <span class="close-curriculum-modal" onclick="closeCurriculumModal()"
+          >&times;</span
+        >
+        <div id="curriculumContent">
+          <!-- Content injected via JS -->
+        </div>
+      </div>
+    </div>
 
     <!-- Image Modal -->
     <div id="imageModal" class="modal" onclick="closeModal()">
       <span class="close-modal">&times;</span>
       <img class="modal-content" id="modalImg" />
     </div>
+
+    <!-- Scroll to Top -->
+    <a href="#home" class="scroll-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
 
     <script src="script.js"></script>
   </body>
