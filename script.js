@@ -114,11 +114,11 @@ document.addEventListener("DOMContentLoaded", () => {
     financial: {
       title: "Financial/Accounting Courses",
       courses: [
+        "Tally Prime and GST",
         "SAP S4 HANA FICO- Finance and Controlling",
         "SAP S4 HANA MM-Materials Management",
         "Financial Data Certification:",
         "Nergy Vidya – Compliance & Accounting",
-        "Tally ERP 9 with GST and Prime",
         "Zoho Books:",
         "Quick Books",
         "Peachtree/ Sage 50:",
@@ -470,14 +470,10 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       conclusion:
         "<strong>By the end of the course</strong>, you will have a clear, practical, and industry-oriented approach to taxation and accounting.",
-      suggested: [
-        "Tally ERP 9 with GST and Prime",
-        "Zoho Books:",
-        "Quick Books",
-      ],
+      suggested: ["Tally Prime and GST", "Zoho Books:", "Quick Books"],
     },
-    "Tally ERP 9 with GST and Prime": {
-      title: "Tally ERP 9 with GST and Prime",
+    "Tally Prime and GST": {
+      title: "Tally Prime and GST",
       description:
         "Practical foundation in accounting using Tally to manage day-to-day business accounts and taxation.",
       list: [
@@ -542,11 +538,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       conclusion:
         "<strong>By the end of the course</strong>, you will have practical skills in computerized accounting using Peachtree.",
-      suggested: [
-        "Quick Books",
-        "Zoho Books:",
-        "Tally ERP 9 with GST and Prime",
-      ],
+      suggested: ["Quick Books", "Zoho Books:", "Tally Prime and GST"],
     },
     "IAF(Indian And Foreign accounting)": {
       title: "IAF(Indian And Foreign accounting)",
@@ -561,11 +553,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       conclusion:
         "<strong>By the end of the course</strong>, you will build a strong career in accounting with exposure to multiple software platforms.",
-      suggested: [
-        "Tally ERP 9 with GST and Prime",
-        "Zoho Books:",
-        "Quick Books",
-      ],
+      suggested: ["Tally Prime and GST", "Zoho Books:", "Quick Books"],
     },
     "GCC VAT": {
       title: "GCC VAT",
@@ -581,7 +569,7 @@ document.addEventListener("DOMContentLoaded", () => {
       conclusion:
         "<strong>By the end of the course</strong>, you will be prepared for VAT-compliant accounting roles in GCC countries.",
       suggested: [
-        "Tally ERP 9 with GST and Prime",
+        "Tally Prime and GST",
         "Financial Data Certification:",
         "IAF(Indian And Foreign accounting)",
       ],
@@ -641,7 +629,7 @@ document.addEventListener("DOMContentLoaded", () => {
       conclusion:
         "<strong>By the end of this course</strong>, you will be a certified expert in Microsoft Office, ready to boost productivity and efficiency in any corporate or professional environment.",
       suggested: [
-        "Tally ERP 9 with GST and Prime",
+        "Tally Prime and GST",
         "Technical Business Analyst",
         "PowerBi",
       ],
