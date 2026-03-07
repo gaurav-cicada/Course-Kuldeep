@@ -114,16 +114,16 @@ document.addEventListener("DOMContentLoaded", () => {
     financial: {
       title: "Financial/Accounting Courses",
       courses: [
-        "Tally Prime and GST",
+        "Tally Prime with GST",
         "SAP S4 HANA FICO- Finance and Controlling",
         "SAP S4 HANA MM-Materials Management",
+        "GCC VAT",
+        "IAF(Indian And Foreign accounting)",
         "Financial Data Certification:",
         "Nergy Vidya – Compliance & Accounting",
         "Zoho Books:",
         "Quick Books",
         "Peachtree/ Sage 50:",
-        "IAF(Indian And Foreign accounting)",
-        "GCC VAT",
       ],
     },
     it: {
@@ -209,8 +209,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "<strong>By the end of this course</strong>, you will be able to analyze business requirements, communicate effectively with technical teams, and support project delivery using industry-standard BA practices and tools.",
       suggested: [
         "Data Analytics Essentials: Python, SQL, Excel, and Power BI",
-        "Microsoft Office Specialist (MOS)",
-        "Full Stack Web Development",
+        "Power BI & SQL",
+        "Data Analysis and Visualization with SQL, Excel and Power BI",
       ],
     },
     "Data Analytics Essentials: Python, SQL, Excel, and Power BI": {
@@ -251,9 +251,9 @@ document.addEventListener("DOMContentLoaded", () => {
       conclusion:
         "<strong>By the end of this course</strong>, you will be able to analyze data efficiently and present insights using SQL, Excel, and Power BI—enabling you to support business decisions with clear and impactful visual reports.",
       suggested: [
-        "Data Analytics Essentials: Python, SQL, Excel, and Power BI",
-        "Python Essentials for Data Analysis",
         "Power BI & SQL",
+        "Technical Business Analyst",
+        "MOS-Microsoft Office Specialist",
       ],
     },
     "Python Essentials for Data Analysis": {
@@ -275,9 +275,9 @@ document.addEventListener("DOMContentLoaded", () => {
       conclusion:
         "<strong>By the end of this course</strong>, you will be able to analyze data, automate simple tasks, and create clear visual reports using Python—building a strong foundation for roles in data analysis and business intelligence.",
       suggested: [
+        "JAVA Programming",
+        "SQL(Structured Query Language)",
         "Data Analytics Essentials: Python, SQL, Excel, and Power BI",
-        "Python Programming",
-        "Full Stack Web Development",
       ],
     },
     "JAVA Programming": {
@@ -418,8 +418,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "<strong>By the end of the course</strong>, learners will be able to navigate SAP confidently and perform key accounting transactions used in corporate finance roles.",
       suggested: [
         "SAP S4 HANA MM-Materials Management",
-        "Technical Business Analyst",
-        "IAF(Indian And Foreign accounting)",
+        "Financial Data Certification:",
+        "GCC VAT",
       ],
     },
     "SAP S4 HANA MM-Materials Management": {
@@ -438,8 +438,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "<strong>By the end of the course</strong>, learners will be able to independently handle procurement and inventory operations in SAP MM.",
       suggested: [
         "SAP S4 HANA FICO- Finance and Controlling",
-        "Technical Business Analyst",
-        "IAF(Indian And Foreign accounting)",
+        "Financial Data Certification:",
+        "GCC VAT",
       ],
     },
     "Financial Data Certification:": {
@@ -470,26 +470,76 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       conclusion:
         "<strong>By the end of the course</strong>, you will have a clear, practical, and industry-oriented approach to taxation and accounting.",
-      suggested: ["Tally Prime and GST", "Zoho Books:", "Quick Books"],
+      suggested: ["Tally Prime with GST", "Zoho Books:", "Quick Books"],
     },
-    "Tally Prime and GST": {
-      title: "Tally Prime and GST",
+    "Tally Prime with GST": {
+      title: "Tally Prime with GST",
+      isCategory: true,
       description:
-        "Practical foundation in accounting using Tally to manage day-to-day business accounts and taxation.",
+        "Our Tally Prime programs are designed to cater to different career goals, from basic office accounting to advanced professional certifications.",
+      subCourses: [
+        "DCA – Diploma in Computer Application",
+        "PGDCA – Post Graduate Diploma in Computer Applications",
+        "Payroll Management with Tally, EPF & ESI",
+      ],
+      suggested: [],
+    },
+    "DCA – Diploma in Computer Application": {
+      title: "DCA – Diploma in Computer Application",
+      duration: "3 Months",
+      fee: "₹5,500",
+      description:
+        "A comprehensive diploma program focused on core computer skills and computerized accounting with Tally Prime and GST compliance.",
       list: [
-        "Set up companies and ledgers in Tally",
-        "Record transactions and prepare Profit & Loss and Balance Sheet",
-        "Manage inventory, purchase and sales processes",
-        "Manufacturing activities and batch-wise accounting",
-        "Payroll processing and GST transactions",
+        "Computer Fundamentals (MS Windows)",
+        "MS Word – Letter Drafting & Formatting",
+        "MS Excel (Basic) – Formulas & Simple Reports",
+        "MS PowerPoint – Presentation Basics",
+        "Basic Accounting Concepts: Journal, Ledger, Trial Balance",
+        "Financial Statements: Profit & Loss & Balance Sheet (Basic)",
+        "Tally Prime: Company Creation & Ledger Management",
+        "Voucher Entries: Sales & Purchase Processes",
+        "GST Setup: CGST, SGST, IGST Configuration",
+        "GST Invoicing: Basic Overview & Reporting",
       ],
       conclusion:
-        "<strong>By the end of the course</strong>, you will have hands-on accounting skills aligned with real-world business requirements.",
-      suggested: [
-        "Nergy Vidya – Compliance & Accounting",
-        "Zoho Books:",
-        "Quick Books",
+        "<strong>Career Opportunities:</strong> Accounts Assistant | Billing Executive | Junior Accountant",
+      suggested: [],
+    },
+    "PGDCA – Post Graduate Diploma in Computer Applications": {
+      title: "PGDCA – Post Graduate Diploma in Computer Applications",
+      duration: "6 – 12 Months",
+      fee: "₹9,000",
+      description:
+        "Advanced post-graduate program covering comprehensive IT skills, programming logic, database management, and professional accounting with Tally Prime.",
+      list: [
+        "🖥 Computer Fundamentals: Hardware, Software & MS Windows OS",
+        "📄 MS Office Professional: Advanced Word, Excel, PowerPoint & Outlook",
+        "🌐 Internet & Digital Skills: Online Services, Email & Cloud Tools",
+        "💻 Basic Programming Concepts: Introduction to Logic, C / Python basics",
+        "🗄 Database Management: Concepts, Introduction to SQL, Data Retrieval",
+        "📊 Accounting Software Advantage: Tally Prime Advanced & GST Overview",
       ],
+      conclusion:
+        "<strong>Suitable For:</strong> Degree Students, Graduates, and IT Beginners. <br><strong>Career Opportunities:</strong> Computer Operator | Office Executive | Data Entry Specialist | MIS Executive | Accounts Assistant",
+      suggested: [],
+    },
+    "Payroll Management with Tally, EPF & ESI": {
+      title: "Payroll Management with Tally, EPF & ESI",
+      duration: "1 – 2 Months",
+      fee: "₹4,500 – ₹6,000",
+      description:
+        "A comprehensive course focusing on end-to-end payroll processing, statutory compliance, and hands-on implementation in TallyPrime.",
+      list: [
+        "👨💼 Payroll Fundamentals: Salary Structure, CTC & Net Salary calculation",
+        "💰 Salary Components: Basic, HRA, Allowances, Deductions & Bonus",
+        "🧾 EPF (Employees Provident Fund): Registration, Contributions & PF Filing",
+        "🏥 ESI (Employees State Insurance): Rules, Calculations & Return Filing",
+        "💻 Payroll in TallyPrime: Setup, Employee Masters & Payslip Generation",
+      ],
+      conclusion:
+        "<strong>Suitable For:</strong> Accountants, HR Executives, B.Com/MBA Students. <br><strong>Career Opportunities:</strong> Payroll Executive | HR Payroll Officer | Compliance Executive",
+      suggested: [],
     },
     "Zoho Books:": {
       title: "Zoho Books:",
@@ -504,7 +554,11 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       conclusion:
         "<strong>By the end of the course</strong>, you will master cloud-based accounting and compliance using Zoho Books.",
-      suggested: ["Quick Books", "Peachtree/ Sage 50:", "Power BI & SQL"],
+      suggested: [
+        "Quick Books",
+        "Peachtree/ Sage 50:",
+        "IAF(Indian And Foreign accounting)",
+      ],
     },
     "Quick Books": {
       title: "Quick Books",
@@ -538,7 +592,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       conclusion:
         "<strong>By the end of the course</strong>, you will have practical skills in computerized accounting using Peachtree.",
-      suggested: ["Quick Books", "Zoho Books:", "Tally Prime and GST"],
+      suggested: ["Quick Books", "Zoho Books:", "Tally Prime with GST"],
     },
     "IAF(Indian And Foreign accounting)": {
       title: "IAF(Indian And Foreign accounting)",
@@ -553,7 +607,11 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       conclusion:
         "<strong>By the end of the course</strong>, you will build a strong career in accounting with exposure to multiple software platforms.",
-      suggested: ["Tally Prime and GST", "Zoho Books:", "Quick Books"],
+      suggested: [
+        "Tally Prime with GST",
+        "GCC VAT",
+        "SAP S4 HANA FICO- Finance and Controlling",
+      ],
     },
     "GCC VAT": {
       title: "GCC VAT",
@@ -569,7 +627,7 @@ document.addEventListener("DOMContentLoaded", () => {
       conclusion:
         "<strong>By the end of the course</strong>, you will be prepared for VAT-compliant accounting roles in GCC countries.",
       suggested: [
-        "Tally Prime and GST",
+        "Tally Prime with GST",
         "Financial Data Certification:",
         "IAF(Indian And Foreign accounting)",
       ],
@@ -629,9 +687,9 @@ document.addEventListener("DOMContentLoaded", () => {
       conclusion:
         "<strong>By the end of this course</strong>, you will be a certified expert in Microsoft Office, ready to boost productivity and efficiency in any corporate or professional environment.",
       suggested: [
-        "Tally Prime and GST",
-        "Technical Business Analyst",
         "PowerBi",
+        "Technical Business Analyst",
+        "Data Analysis and Visualization with SQL, Excel and Power BI",
       ],
     },
     PowerBi: {
@@ -684,19 +742,52 @@ document.addEventListener("DOMContentLoaded", () => {
     // Close any previous modal
     document.getElementById("courseDetailsModal").style.display = "none";
 
-    if (!data) {
-      // Fallback for missing data
+    if (data.isCategory) {
+      let subCardsHtml = "";
+      data.subCourses.forEach((sub) => {
+        subCardsHtml += `
+          <div class="sub-course-card" onclick="openCourseCurriculum('${sub}', '${data.title}')" style="cursor: pointer; background: white; margin-bottom: 15px;">
+            <h4 style="color: var(--primary-dark-blue);">${sub}</h4>
+            <span class="know-more" style="color: #a83232;">View Details ></span>
+          </div>
+        `;
+      });
+
+      let suggestedHtml = "";
+      if (data.suggested) {
+        data.suggested.forEach((s) => {
+          suggestedHtml += `
+            <div class="suggested-card" onclick="openCourseCurriculum('${s}', '${categoryTitle}')" style="cursor: pointer;">
+              <h4>${s}</h4>
+            </div>
+          `;
+        });
+      }
+
+      let htmlSuggested = "";
+      if (suggestedHtml) {
+        htmlSuggested = `
+          <div class="suggested-courses" style="margin-top: 60px;">
+            <h3 style="text-align: center; margin-bottom: 30px; font-family: 'Playfair Display', serif;">Next Steps in Accounting</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+              ${suggestedHtml}
+            </div>
+          </div>
+        `;
+      }
+
       content.innerHTML = `
         <div class="breadcrumbs">Home / Courses / ${categoryTitle} / ${courseName}</div>
         <div class="curriculum-header">
-          <h1>${courseName}</h1>
+          <h1>${data.title}</h1>
           <div class="details-divider"></div>
         </div>
         <div class="curriculum-body">
-          <p style="text-align: center;">Curriculum details are currently being updated for this professional module. Please contact us for the full syllabus.</p>
-          <div style="text-align: center; margin-top: 30px;">
-             <a href="#contact" class="btn btn-primary" onclick="closeCurriculumModal()">Contact for Syllabus</a>
+          <p style="font-size: 18px; margin-bottom: 40px; text-align: center;">${data.description}</p>
+          <div class="details-grid">
+            ${subCardsHtml}
           </div>
+          ${htmlSuggested}
         </div>
       `;
     } else {
@@ -714,6 +805,25 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
       });
 
+      let metaInfoHtml = "";
+      if (data.duration || data.fee) {
+        metaInfoHtml = `
+          <div class="course-meta-info" style="display: flex; gap: 30px; margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;">
+            ${data.duration ? `<div><i class="far fa-clock"></i> <strong>Duration:</strong> ${data.duration}</div>` : ""}
+            ${data.fee ? `<div><i class="fas fa-tag"></i> <strong>Course Fees:</strong> ${data.fee}</div>` : ""}
+          </div>
+        `;
+      }
+
+      let suggestedHeaderHtml = "";
+      if (suggestedHtml) {
+        suggestedHeaderHtml = `
+          <div class="suggested-courses">
+            ${suggestedHtml}
+          </div>
+        `;
+      }
+
       content.innerHTML = `
         <div class="breadcrumbs">
           Home / Courses / ${categoryTitle} / ${courseName}
@@ -721,6 +831,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="curriculum-header" style="text-align: center;">
           <h1 style="text-transform: uppercase; font-size: 42px; letter-spacing: 2px;">${data.title}</h1>
           <div class="details-divider" style="margin: 20px auto;"></div>
+          ${metaInfoHtml}
         </div>
         <div class="curriculum-body">
           <p style="font-size: 18px; line-height: 1.6; margin-bottom: 30px;">${data.description}</p>
@@ -736,9 +847,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <i class="fab fa-pinterest-p" style="margin-left: 15px; cursor: pointer;"></i>
           </div>
 
-          <div class="suggested-courses">
-            ${suggestedHtml}
-          </div>
+          ${suggestedHeaderHtml}
         </div>
       `;
     }
@@ -793,13 +902,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Unified close function
-  window.closeAllModals = function () {
-    // 1. Close Modals
-    if (window.closeDetailsModal) window.closeDetailsModal();
-    if (window.closeCurriculumModal) window.closeCurriculumModal();
-    if (window.closeModal) window.closeModal();
+  window.closeAllModals = function (shouldPopHistory = false) {
+    const detailsModal = document.getElementById("courseDetailsModal");
+    const curriculumModal = document.getElementById("courseCurriculumModal");
+    const imageModal = document.getElementById("imageModal");
 
-    // 2. Close Mobile Menu
+    // Close Modals
+    if (detailsModal) detailsModal.style.display = "none";
+    if (curriculumModal) curriculumModal.style.display = "none";
+    if (imageModal) imageModal.style.display = "none";
+
+    // Close Mobile Menu
     const navContainer = document.querySelector(".nav-container");
     const mobileMenuBtn = document.getElementById("mobileMenuBtn");
     if (navContainer && navContainer.classList.contains("active")) {
@@ -812,47 +925,88 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    document.body.style.overflow = "auto"; // Global restore
+    document.body.style.overflow = "auto";
   };
 
   // Listen for back button
   window.addEventListener("popstate", (event) => {
-    if (isAnyModalOpen()) {
-      window.closeAllModals();
+    const state = event.state;
+
+    // First, close whatever is currently open without any side effects
+    window.closeAllModals();
+
+    if (state) {
+      // Re-open the specific modal based on the history state
+      if (state.modal === "details") {
+        window.openCourseDetails(state.category, true);
+      } else if (state.modal === "curriculum") {
+        window.openCourseCurriculum(
+          state.courseName,
+          state.categoryTitle,
+          true,
+        );
+      } else if (state.modal === "image") {
+        window.openModal(state.src, true);
+      } else if (state.modal === "menu") {
+        navContainer.classList.add("active");
+        document.body.classList.add("menu-open");
+        const icon = mobileMenuBtn.querySelector("i");
+        if (icon) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
+        }
+      }
     }
   });
 
   // Updated Open Functions to push history state
-  const originalOpenDetails = window.openCourseDetails;
-  window.openCourseDetails = function (category) {
-    history.pushState({ modal: "details" }, "");
-    originalOpenDetails(category);
-  };
-
-  const originalOpenCurriculum = window.openCourseCurriculum;
-  window.openCourseCurriculum = function (courseName, categoryTitle) {
-    // If opening from details, we don't necessarily need another pushState
-    // depending on if we want "back" to go to details or home.
-    // For now, let's keep it simple: one state for "some modal is open".
-    if (!isAnyModalOpen()) {
-      history.pushState({ modal: "curriculum" }, "");
+  const internalOpenDetails = window.openCourseDetails;
+  window.openCourseDetails = function (category, isBackAction = false) {
+    if (!isBackAction) {
+      history.pushState({ modal: "details", category: category }, "");
     }
-    originalOpenCurriculum(courseName, categoryTitle);
+    internalOpenDetails(category);
   };
 
-  const originalOpenImage = window.openModal;
-  window.openModal = function (src) {
-    history.pushState({ modal: "image" }, "");
-    originalOpenImage(src);
+  const internalOpenCurriculum = window.openCourseCurriculum;
+  window.openCourseCurriculum = function (
+    courseName,
+    categoryTitle,
+    isBackAction = false,
+  ) {
+    if (!isBackAction) {
+      history.pushState(
+        {
+          modal: "curriculum",
+          courseName: courseName,
+          categoryTitle: categoryTitle,
+        },
+        "",
+      );
+    }
+    internalOpenCurriculum(courseName, categoryTitle);
+  };
+
+  const internalOpenImage = window.openModal;
+  window.openModal = function (src, isBackAction = false) {
+    if (!isBackAction) {
+      history.pushState({ modal: "image", src: src }, "");
+    }
+    internalOpenImage(src);
   };
 
   // Handle mobile menu history state
-  mobileMenuBtn.addEventListener("click", () => {
+  mobileMenuBtn.addEventListener("click", (e) => {
+    // Check if we are OPENING the menu
     if (!navContainer.classList.contains("active")) {
+      // The toggle logic in step 1 will run AFTER this or at the same time
+      // But we check current state: if not active, it's about to be.
+      // Wait a tiny bit to let the toggle finish or just push
       history.pushState({ modal: "menu" }, "");
     } else {
-      // If closing manually, we could theoretically go back in history,
-      // but toggle logic usually handles this.
+      // If closing manually, we don't necessarily go back in history here
+      // But if user clicks 'X', we might want to pop.
+      // Simplified: let popstate handle browser back.
     }
   });
 });
