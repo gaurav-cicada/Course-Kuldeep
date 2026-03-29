@@ -115,15 +115,10 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Financial/Accounting Courses",
       courses: [
         "Tally Prime with GST",
-        "SAP S4 HANA FICO- Finance and Controlling",
-        "SAP S4 HANA MM-Materials Management",
+        "SAP S4 HANA",
         "GCC VAT",
         "IAF(Indian And Foreign accounting)",
-        "Financial Data Certification:",
-        "Nergy Vidya – Compliance & Accounting",
-        "Zoho Books:",
         "Quick Books",
-        "Peachtree/ Sage 50:",
       ],
     },
     it: {
@@ -401,8 +396,80 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     // FINANCIAL COURSES Content
-    "SAP S4 HANA FICO- Finance and Controlling": {
-      title: "SAP S4 HANA FICO",
+    "SAP S4 HANA": {
+      title: "SAP S4 HANA",
+      isCategory: true,
+      description:
+        "Our SAP S4 HANA programs are designed to cater to different functional areas, preparing students with end-to-end implementation and end user processes.",
+      subCourses: [
+        "FICO Finance and Controlling",
+        "M M Material Management",
+        "P P Production Planning with end user process",
+        "S D Sales and Distribution With end user process",
+      ],
+      suggested: [],
+    },
+    "P P Production Planning with end user process": {
+      title: "P P Production Planning with end user process",
+      description:
+        "The course will prepare students to understand all the necessary end-to-end implementation steps to configure SAP S/4HANA Production Planning with End-User processes. After this course, students will be able to identify and analyze business requirements for Record to Report process cycles and configure SAP S/4HANA PP accordingly.<br><br>Learners will be able to work both as a Consultant and End-User, and can also take the SAP S/4HANA PP certification exam. The course is perfect for absolute beginners; having basic Manufacturing or Production Planning knowledge is helpful.<br><br><strong>Key Highlights:</strong><br>Configuration & Implementation for SAP S/4HANA PP, Hands-on experience, Integration of PP with MM, SD & Finance, BP & Linkages to Customer/Vendor Master, SAP PP Closing Cockpit, Universal Journal (ACDOCA), and SAP FIORI S/4HANA PP Apps.",
+      list: [
+        "<strong>Module 1: Introduction to S4HANA</strong><ul><li>S4HANA overview</li><li>HANA architecture and deployment</li><li>S4HANA History releases</li></ul>",
+        "<strong>Module 2: Introduction to SAP Activate Methodology</strong><ul><li>System Conversion</li><li>Landscape transformation</li><li>New implementation</li></ul>",
+        "<strong>Module 3: Organization Structure</strong><ul><li>Client, Company Code, Plant</li><li>Storage Location, Sales Organisation</li><li>Distribution Channel, Division</li></ul>",
+        "<strong>Module 4: Master Data</strong><ul><li>Material Master</li><li>Workcenter</li><li>Routing</li><li>Production Version</li><li>Bill of Material</li></ul>",
+        "<strong>Module 5: Production Planning</strong><ul><li>MRP Planning</li><li>MPS Planning</li><li>REORDER TYPE PLANNING</li><li>Consumption Base Planning</li></ul>",
+        "<strong>Module 6: Production Execution</strong><ul><li>Make to Stock (production strategy)</li><li>Make to order (Production Strategy)</li><li>Production execution for process industries</li><li>Batch Management</li><li>Variant Configuration</li></ul>",
+        "<strong>Module 7: Good Movement</strong><ul><li>Automatic good movement</li><li>Manual goods movement</li><li>Back flushing</li></ul>",
+        "<strong>Module 8: Production Order Creation</strong><ul><li>Creation of Production Order</li><li>Release of Production Order</li><li>Production Version selection</li></ul>",
+        "<strong>Module 9: Production Confirmation</strong><ul><li>Time Ticket Confirmation</li><li>Repetitive Back flushing</li><li>Collective confirmation at header level</li><li>Milestone confirmation</li><li>Progressive Confirmation</li></ul>",
+        "<strong>Module 10: Product Costing</strong><ul><li>Product Cost Collector</li><li>Production Order Costing</li><li>Target Cost, Planned Cost</li><li>Difference Between Planned & Actual</li><li>Repetitive Manufacturing profile</li></ul>",
+        "<strong>Module 11: Repetitive Manufacturing</strong><ul><li>Back flushing</li><li>All backend configuration</li></ul>",
+        "<strong>Module 12: Configuration PP Module</strong><ul><li>Configuration PP Module</li></ul>",
+        "<strong>Module 13: Reports</strong><ul><li>SAP PP Reports</li></ul>",
+        "<strong>Module 14: Advanced Topics</strong><ul><li>Complete Table Understanding</li><li>Transport Request and movement of TR</li></ul>",
+        "<strong>Module 15: Integration of PP with other Modules</strong><ul><li>Integration with Finance</li><li>Integration with SD</li><li>Integration with MM</li><li>Procurement Process</li><li>Integration with Controlling</li></ul>",
+        "<strong>Module 16: Real Time Scenarios</strong><ul><li>Project Preparation</li><li>Resolving tickets</li><li>LSMW</li><li>Implementation overview</li><li>Support and maintenance process</li></ul>",
+      ],
+      conclusion:
+        "<strong>Key Benefits of the Training:</strong><br>• Our complete training is constructed as per current industry standards.<br>• Live Project & Industrial Based Training.<br>• Led by Certified Expert & Competent Trainers.<br>• Easy to understand study material with Smart Labs access.<br>• Globally Recognized Course Completion Certificate.<br>• Personality Development, Resume Prep, and Interview Preparation classes.<br>• Dedicated training & placement assistance.",
+      suggested: [],
+    },
+    "S D Sales and Distribution With end user process": {
+      title: "S D Sales and Distribution With end user process",
+      description:
+        "The course will prepare the students to learn and understand all the necessary end-to-end implementation steps to configure SAP S/4HANA Sales & Distribution with End-User processes for any organization. After this course, the students will be able to identify and analyze the business requirements of any organization for Record to Report process cycle and to configure SAP S/4HANA SD accordingly.<br><br>After doing this course, the Learners will be able to work both as a Consultant and End-User and can also take SAP S/4HANA SD certification exam. The course is perfect for absolute beginners; having basic sales & distribution (O2C) knowledge is helpful.<br><br><strong>Key Highlights:</strong><br>Configuration & Implementation for SAP S/4HANA Sales & Distribution, Hands-on experience, Integration of SAP S/4HANA SD with MM & Finance, Business Partners and linkage with Customer/Vendor Master, SAP SD Closing Cockpit, Universal Journal (ACDOCA), and SAP FIORI S/4HANA SD Apps.",
+      list: [
+        "<strong>Module 1: Introduction to S4HANA</strong><ul><li>S4HANA overview</li><li>HANA architecture and deployment</li><li>S4HANA History releases</li></ul>",
+        "<strong>Module 2: Introduction to SAP Activate Methodology</strong><ul><li>System Conversion</li><li>Landscape transformation</li><li>New implementation</li></ul>",
+        "<strong>Module 3: Organization Structure</strong><ul><li>Define SD Organization structure</li><li>Assign SD organization structure</li></ul>",
+        "<strong>Module 4: Key Innovations</strong><ul><li>Business Partner</li><li>Order Management Billing</li><li>Credit Management</li><li>Inventory Management</li><li>Material Requirement Planning</li><li>Architectural Changes/Configurations related to Sales</li></ul>",
+        "<strong>Module 5: Business Partners</strong><ul><li>Introduction to Business Partners</li><li>Maintaining Business Partners</li><li>BP Relationships, BP tables</li><li>Customizing BP roles</li><li>Customer Vendor Integration</li></ul>",
+        "<strong>Module 6: Overview of Sales & Distribution</strong><ul><li>Organizational structures</li><li>Sales and distribution aspect</li><li>Materials management aspect</li></ul>",
+        "<strong>Module 7: Master Data</strong><ul><li>Working with Business Partners</li><li>Working with Material Master Record</li><li>Customer Account groups</li><li>Working with Customer Info Records</li></ul>",
+        "<strong>Module 8: Pre-Sales Activity</strong><ul><li>Inquiries, Quotations</li></ul>",
+        "<strong>Module 9: Creating, Processing and Controlling</strong><ul><li>Item Categories Determination</li><li>Schedule lines Categories Determination</li><li>Copy Control</li><li>Log of incomplete items</li><li>Creation of sales order with reference</li></ul>",
+        "<strong>Module 10: Pricing</strong><ul><li>Condition Technique, Condition Type, Access Sequence</li><li>Condition Record, Condition Table</li><li>Price determination</li><li>Definition and maintenance of prices, surcharges, and discounts</li></ul>",
+        "<strong>Module 11: Fast Material Entry in Sales order</strong><ul><li>Product Proposals</li><li>Material Listing and exclusion</li><li>Material Determination</li><li>Free goods</li></ul>",
+        "<strong>Module 12: Sales Order Types</strong><ul><li>Rush order</li><li>Cash Sales</li><li>Free of charge deliveries</li></ul>",
+        "<strong>Module 13: Outline Agreements</strong><ul><li>Contracts</li><li>Scheduling agreements</li></ul>",
+        "<strong>Module 14: ATP (Availability to Promise)</strong><ul><li>SAP ATP Overview, Purpose, Types, Scope</li><li>Availability Check – Sales Order, Control, Configuration, Prerequisites</li><li>Master Data Preparation</li><li>Availability Check – Order Processing, Delivery Processing</li></ul>",
+        "<strong>Module 15: Partner Determination</strong><ul><li>Define Partner Function</li><li>Create Partner Determination</li><li>Assign Partner Determination</li></ul>",
+        "<strong>Module 16: Special Business Processes</strong><ul><li>Consignments</li><li>Bill of material</li></ul>",
+        "<strong>Module 17: Shipping</strong><ul><li>Overview of shipping</li><li>Shipping point and route determination</li><li>Creating and controlling outbound delivery, Delivery processing</li><li>Picking, Picking conformation</li><li>Goods issue</li></ul>",
+        "<strong>Module 18: Billing</strong><ul><li>Billing document types</li><li>Creation of billing documents</li><li>Overview of billing methods, Billing plan</li><li>Revenue account determination</li><li>Posting billing document to Accounts</li></ul>",
+        "<strong>Module 19: Credit Management</strong><ul><li>Purpose of Credit Management</li><li>Types of Credit Management</li><li>Configuration</li></ul>",
+        "<strong>Module 20: Other Topics</strong><ul><li>Text determination</li><li>Output determination</li></ul>",
+        "<strong>Module 21: Business Process</strong><ul><li>Normal Sales, Return Sales, Third Party Sales</li><li>Free Goods, Text Item</li><li>Consignment fill & issue, Consignment pick & return</li><li>Sales using sales BOM</li></ul>",
+        "<strong>Module 22: Integration of SD with other Modules</strong><ul><li>Integration with Finance, Production, MM, Controlling</li><li>Procurement Process</li></ul>",
+        "<strong>Module 23: Real Time Scenarios</strong><ul><li>Project Preparation</li><li>Resolving tickets</li><li>LSMW</li><li>Implementation overview</li><li>Support and maintenance process</li></ul>",
+      ],
+      conclusion:
+        "<strong>Key Benefits of the Training:</strong><br>• Our complete training is constructed as per current industry standards.<br>• Live Project & Industrial Based Training.<br>• Led by Certified Expert & Competent Trainers.<br>• Easy to understand study material with Smart Labs access.<br>• Globally Recognized Course Completion Certificate.<br>• Personality Development, Resume Prep, and Interview Preparation classes.<br>• Dedicated training & placement assistance.",
+      suggested: [],
+    },
+    "FICO Finance and Controlling": {
+      title: "FICO Finance and Controlling",
       description:
         "The course will prepare students to understand all the necessary end-to-end implementation steps to configure SAP S/4HANA Finance and Controlling 1909 with End-User processes. After this course, students will be able to identify and analyze business requirements for Record to Report process cycles and configure SAP S/4HANA FICO accordingly.<br><br>Learners will be able to work both as a Consultant and End-User, and can also take the SAP S/4HANA Finance 1909 certification exam (C_TS4FI_1909).",
       list: [
@@ -441,56 +508,25 @@ document.addEventListener("DOMContentLoaded", () => {
         "<strong>Key Benefits of the Training:</strong><br>• Our complete training is constructed as per current industry standards.<br>• Live Project & Industrial Based Training.<br>• Led by Certified Expert & Competent Trainers.<br>• Easy to understand study material with Smart Labs access.<br>• Globally Recognized Course Completion Certificate.<br>• Personality Development, Resume Prep, and Interview Preparation classes.<br>• Dedicated training & placement assistance.",
       suggested: [],
     },
-    "SAP S4 HANA MM-Materials Management": {
-      title: "SAP S4 HANA MM",
+    "M M Material Management": {
+      title: "M M Material Management",
+      duration: "2 to 3 Months (Online / Offline, Flexible batches - Weekday / Weekend)",
       description:
-        "This course provides a comprehensive foundation in SAP S/4HANA Material Management (MM), focusing on procurement, inventory, and material valuation.",
+        "<strong>Course Overview:</strong><br>This course provides a strong foundation in SAP S/4HANA and Materials Management (MM), focusing on procurement, inventory management, and supply chain processes. Learn how top companies manage purchasing, vendor management, and stock using SAP — widely used by organizations like Amazon, Wipro, and Capgemini. The training includes real-time scenarios and hands-on SAP practice to make you job-ready.<br><br><strong>Course Objectives:</strong><br>By the end of this course, you will be able to: Understand SAP S/4HANA system basics, Work with procurement lifecycle in SAP, Create and manage purchase orders, Handle inventory and stock management, Work with vendors and material master data, and Perform real-time business transactions.",
       list: [
-        "SAP S/4HANA and MM fundamentals",
-        "Organizational units: plant, storage location, purchasing group",
-        "Master data: material master, vendor master, info records",
-        "Procure-to-pay (P2P) cycle execution",
-        "Inventory management: goods receipt, issue, transfers, and physical inventory",
-        "Pricing procedures and purchase price determination",
+        "🧾 <strong>Module 1: SAP S/4HANA Fundamentals:</strong> Introduction to ERP & SAP, SAP S/4HANA overview, SAP GUI & Fiori navigation, Organizational structure",
+        "📦 <strong>Module 2: Materials Management (MM) Basics:</strong> Introduction to SAP MM, Procurement process overview, Master data (Material Master, Vendor Master)",
+        "🛒 <strong>Module 3: Procurement Process:</strong> Purchase Requisition (PR), Request for Quotation (RFQ), Purchase Order (PO), Vendor selection process",
+        "📊 <strong>Module 4: Inventory Management:</strong> Goods Receipt (GR), Goods Issue (GI), Stock transfer, Inventory valuation",
+        "🧮 <strong>Module 5: Invoice Verification:</strong> Invoice processing, 3-way matching (PO, GR, Invoice), Payment process overview",
+        "🔄 <strong>Module 6: Integration:</strong> MM-FI Integration (Finance), MM-SD Integration (Sales), Real-time business scenarios",
+        "🧠 <strong>Module 7: Practical Training:</strong> Live SAP server practice, End-to-end procurement cycle, Case studies & projects",
       ],
       conclusion:
-        "<strong>By the end of the course</strong>, learners will be able to independently handle procurement and inventory operations in SAP MM.",
-      suggested: [
-        "SAP S4 HANA FICO- Finance and Controlling",
-        "Financial Data Certification:",
-        "GCC VAT",
-      ],
+        "<strong>👨‍🎓 Who Can Join?</strong><br>B.Com / BBA / MBA Students, Freshers looking for SAP careers, Supply chain & logistics professionals, Warehouse / inventory executives, Anyone interested in ERP systems.<br><br><strong>🛠️ Tools & Access:</strong><br>• SAP S/4HANA System Access<br>• SAP Fiori Interface<br>• Real-time Server Practice<br><br><strong>🎓 Certification:</strong><br>Course Completion Certificate, Guidance for SAP Global Certification (Optional).<br><br><strong>💼 Career Opportunities:</strong><br>SAP MM Consultant, Procurement Executive, Supply Chain Analyst, Inventory Controller, SAP End User (MM).",
+      suggested: [],
     },
-    "Financial Data Certification:": {
-      title: "Financial Data Certification",
-      description:
-        "Strong foundation in global financial markets, investment banking concepts, and financial data operations.",
-      list: [
-        "Investment banking and the global financial system",
-        "Equity markets, IPO processes, and stock exchanges",
-        "Fixed income securities: bonds, yields, and pricing",
-        "Foreign exchange (FX) markets and instruments",
-        "Derivatives: forwards, futures, options, and swaps",
-        "Financial modelling and valuation using Excel",
-      ],
-      conclusion:
-        "<strong>By the end of the course</strong>, learners will be prepared for roles in investment banking operations and financial analytics.",
-      suggested: ["Advanced Excel Specialist", "Power BI & SQL", "Zoho Books:"],
-    },
-    "Nergy Vidya – Compliance & Accounting": {
-      title: "Nergy Vidya",
-      description:
-        "Practical knowledge in statutory compliance, taxation, and basic accounting for real-world responsibilities.",
-      list: [
-        "Digital Statutory e-Filing Essentials: ITR, GST, MCA, EPF, and ESIC",
-        "GST Compliance: Registration, Filing, and E-Way bills",
-        "Accounting for Beginners: Journals, Ledgers, and Financial Statements",
-        "Practical Tax Calculations: TDS and TCS computation",
-      ],
-      conclusion:
-        "<strong>By the end of the course</strong>, you will have a clear, practical, and industry-oriented approach to taxation and accounting.",
-      suggested: ["Tally Prime with GST", "Zoho Books:", "Quick Books"],
-    },
+
     "Tally Prime with GST": {
       title: "Tally Prime with GST",
       isCategory: true,
@@ -578,25 +614,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "<strong>👨‍🎓 Who Can Join?</strong><br/>B.Com / M.Com / MBA Students, Job seekers in accounting field, Accountants & professionals, Business owners, Anyone interested in taxation.<br/><br/><strong>🛠️ Tools Covered:</strong><br/>• GST Portal (www.gst.gov.in)<br/>• Income Tax Portal (www.incometax.gov.in)<br/>• Tally (optional integration)",
       suggested: [],
     },
-    "Zoho Books:": {
-      title: "Zoho Books:",
-      description:
-        "End-to-end practical training on Zoho Books for cloud-based accounting and GST compliance.",
-      list: [
-        "Organization setup and user management",
-        "GST configuration and Chart of Accounts design",
-        "Purchase (P2P) and Sales (Q2C) cycle management",
-        "AI-assisted bank reconciliation and online gateways",
-        "Direct GST filing from Zoho Books",
-      ],
-      conclusion:
-        "<strong>By the end of the course</strong>, you will master cloud-based accounting and compliance using Zoho Books.",
-      suggested: [
-        "Quick Books",
-        "Peachtree/ Sage 50:",
-        "IAF(Indian And Foreign accounting)",
-      ],
-    },
     "Quick Books": {
       title: "Quick Books",
       description:
@@ -610,26 +627,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       conclusion:
         "<strong>By the end of the course</strong>, you will gain job-ready skills in computerized accounting using QuickBooks.",
-      suggested: [
-        "Zoho Books:",
-        "Peachtree/ Sage 50:",
-        "Financial Data Certification:",
-      ],
-    },
-    "Peachtree/ Sage 50:": {
-      title: "Peachtree/ Sage 50:",
-      description:
-        "Hands-on training in Peachtree for accurate business accounting and compliance-ready reporting.",
-      list: [
-        "Software interface and company data flow",
-        "Vendors, customers, and bank management",
-        "Financial reporting and export to Excel",
-        "Sales tax and payroll operations",
-        "Job-based billing and project tracking",
-      ],
-      conclusion:
-        "<strong>By the end of the course</strong>, you will have practical skills in computerized accounting using Peachtree.",
-      suggested: ["Quick Books", "Zoho Books:", "Tally Prime with GST"],
+      suggested: [],
     },
     "IAF(Indian And Foreign accounting)": {
       title: "IAF(Indian And Foreign accounting)",
