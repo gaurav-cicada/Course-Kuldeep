@@ -404,23 +404,42 @@ document.addEventListener("DOMContentLoaded", () => {
     "SAP S4 HANA FICO- Finance and Controlling": {
       title: "SAP S4 HANA FICO",
       description:
-        "This program provides a practical foundation in SAP Financial Accounting (FICO), designed to help learners understand how finance operations are managed in real-world organizations using SAP.",
+        "The course will prepare students to understand all the necessary end-to-end implementation steps to configure SAP S/4HANA Finance and Controlling 1909 with End-User processes. After this course, students will be able to identify and analyze business requirements for Record to Report process cycles and configure SAP S/4HANA FICO accordingly.<br><br>Learners will be able to work both as a Consultant and End-User, and can also take the SAP S/4HANA Finance 1909 certification exam (C_TS4FI_1909).",
       list: [
-        "Core SAP & ERP concepts and business processes integration",
-        "Setting up company codes, business areas, and controlling areas",
-        "Chart of Accounts and General Ledger operations",
-        "Customer, vendor, and asset accounting",
-        "Handling Accounts Payable (AP) and Accounts Receivable (AR)",
-        "Bank accounting and reconciliation",
-        "GST transactions and taxation scenarios",
+        "<strong>Module 1: Introduction to SAP S/4HANA, Finance, SAP Activate & Universal Journal</strong><ul><li>Introduction to SAP S/4HANA and Finance Module</li><li>Enterprise Structure & ERP R/3 Structure</li><li>ASAP Methodology & Role of a Functional Consultant</li><li>Core Functional Modules Overview & Integration in SAP</li></ul>",
+        "<strong>Module 2: Enterprise Structure in SAP S/4HANA, Projects Types & Documentation</strong><ul><li>Business Scenario & Enterprise Structure - Definition of Client</li><li>Creation of Company Code and Business Areas</li><li>Define Company and Assignment of Company code to Company</li><li>Customizing Requests Transport Organizer</li></ul>",
+        "<strong>Module 3: Fiscal Year Variant and Posting Period Variant</strong><ul><li>Business Scenario & Variant Principle</li><li>Fiscal Year Variant (Calendar and Non-Calendar)</li></ul>",
+        "<strong>Module 4: General Ledger Accounts & Document Splitting Configuration</strong><ul><li>Business Scenario, Chart of Accounts, G/L Account Groups</li><li>Number Ranges, Field Status & Retained Earnings Account</li><li>G/L Master Data Creation, Expense & Revenue Account Creation</li><li>Reconciliation Account Creation</li></ul>",
+        "<strong>Module 5: Controlling Area, Profit Center, Cost Center & Elements</strong><ul><li>Maintain Controlling Area and Version 0</li><li>Profit/Cost Center Accounting and Master Data</li><li>Default Account Assignment for Cost and Profit Centers</li></ul>",
+        "<strong>Module 6: Currency Types, Ledgers and Accounting Principles</strong><ul><li>Currency Types and Conversion Settings</li><li>Exchanges Rates, Leading Ledger 0L, Parallel Accounting G/L</li></ul>",
+        "<strong>Module 7: Integration of Controlling with Financial Accounting</strong><ul><li>Configuration of Integration of Controlling with Financial Accounting</li></ul>",
+        "<strong>Module 8: Business Partner, Customer and Vendor Master Data (A/R and A/P)</strong><ul><li>Introduction to Business Partner, Customer and Vendor Master Data</li><li>Customer/Vendor Account Groups and Number Ranges</li><li>Define Number Assignment for Direction BP to Customer/Vendor</li><li>Creation of Business Partner Master Data & One-time Master Data</li><li>Customer as Vendor and Vendor as Customer Clearing</li></ul>",
+        "<strong>Module 9: Bank Master Data and House Bank</strong><ul><li>Manage House Bank and Bank Master</li><li>SAP Business Client - Maintain link between House Bank and G/L</li></ul>",
+        "<strong>Module 10: Documents and Document Controls in SAP S/4HANA Finance</strong><ul><li>Documents in SAP S/4HANA Finance</li><li>Document Types, Number Ranges, Posting Keys, Default Values</li></ul>",
+        "<strong>Module 11: Taxes on Sales/Purchases - A/R & A/P</strong><ul><li>Basic Settings - Tax Calculation Procedure</li><li>Calculation - Tax Codes and Base Amount</li><li>Define Input and Output Taxes G/L Accounts & Document Splitting</li><li>Document Entry with Tax Code</li></ul>",
+        "<strong>Module 12: Tolerance Limits for Employees, G/L & Customer/Vendor</strong><ul><li>Tolerance Groups for Employees, G/L Accounts, Customer/Vendor</li><li>Document Entry with Tolerance Limits</li></ul>",
+        "<strong>Module 13: Currencies, Exchange Rates and Exchange Rate Differences</strong><ul><li>Currencies and Exchange Rates through SAP NetWeaver</li><li>Exchange Rate Tools, Reference Currency Tool</li><li>Define Translation Ratios and Enter Exchange Rates</li><li>Exchange Rate Differences for Open Item Clearing & G/L Accounts</li><li>Overview for Foreign Currency Valuation as Periodic Processing</li></ul>",
+        "<strong>Module 14: Holding and Parking Documents in SAP S/4HANA Finance</strong><ul><li>Holding and Parking Documents for G/L, A/R, A/P</li></ul>",
+        "<strong>Module 15: Documents Posting, Display Line Items & Prima Nota</strong><ul><li>G/L, Customer, and Vendor Invoice Posting and Balances</li><li>Posting of the invoice with document splitting</li><li>SAP Fiori Document Posting and Universal Journal (ACDOCA)</li><li>Prima Nota</li></ul>",
+        "<strong>Module 16: Reference Documents and Recurring Model</strong><ul><li>Recurring Document and Periodic Processing</li></ul>",
+        "<strong>Module 17: Payment Terms and Cash Discounts - A/R & A/P</strong><ul><li>Payment Terms Setup</li><li>Customer/Vendor Invoice Posting With/Without Terms of Payment</li><li>Define Cash Discount G/L Accounts</li></ul>",
+        "<strong>Module 18: Documents Clearing for General Ledger, Customer and Vendor</strong><ul><li>Account Clearing for G/L, Customer (A/R), Vendor (A/P)</li><li>Post With Clearing, Partial and Residual Payments</li><li>Post Exchange Rate Differences for Foreign Customer Payment</li></ul>",
+        "<strong>Module 19: Automatic Payment Program</strong><ul><li>Automatic Payment Program Configuration and Execution</li><li>Update Customers and Vendors for APP</li><li>Debit Balance Check, Printout and Scheduled Payment Run</li></ul>",
+        "<strong>Module 20: Special G/L Transactions (Down Payment Received and Made)</strong><ul><li>G/L Creation, Vendor Down Payment Configuration and Execution</li><li>Other Special G/L Indicators for Customer/Vendor Invoices</li></ul>",
+        "<strong>Module 21: Document Reversal Posting and Reset Cleared Items</strong><ul><li>Normal Reversal Posting</li><li>Reset Cleared Items Execution</li><li>Reset Clearing Document with Exchange Rate Differences</li></ul>",
+        "<strong>Module 22: Bank Accounting - Cash Journal and Bank Reconciliation</strong><ul><li>Cash Journal Configuration and Execution</li><li>Manual Bank Reconciliation Configuration and Execution</li></ul>",
+        "<strong>Module 23: Automatic Dunning - A/R and A/P</strong><ul><li>Define Dunning Procedure</li><li>Update Customers and Vendors with Dunning Procedure</li><li>Check Overdue Items and Automatic Dunning Execution</li></ul>",
+        "<strong>Module 24: Correspondence - A/R and A/P</strong><ul><li>Individual Correspondence</li><li>Account Statements - Correspondence</li></ul>",
+        "<strong>Module 25: Financial Statement Version for Balance Sheet and P&L</strong><ul><li>Financial Statement Version Hierarchy Levels</li><li>Assign G/L Accounts to FSV</li><li>SAP S/4HANA Finance - Information System</li></ul>",
+        "<strong>Module 26: New Asset Accounting in SAP S/4HANA Finance (Configuration)</strong><ul><li>Activate New Asset Accounting and Chart of Depreciation</li><li>Depreciation Areas, Asset Classes, Account Determination</li><li>Integration between New Asset Accounting and G/L Accounting</li><li>Determine Depreciation Areas, Transaction types for Acquisitions</li></ul>",
+        "<strong>Module 27: New Asset Accounting in SAP S/4HANA Finance (End-User)</strong><ul><li>Creation of Asset Master Record & Asset Explorer</li><li>Asset Acquisitions, Retirements, and Revaluation</li><li>Execute Depreciation Run & Year-End Closing</li></ul>",
+        "<strong>Module 28: Integration of SAP S/4HANA FICO with MM</strong><ul><li>Enterprise Structure and MM Hierarchy</li><li>Material Master Data, Valuation Class, Procurement to Payment Cycle</li><li>Asset Acquistion and Posting into Cost Center with MM</li></ul>",
+        "<strong>Module 29: Integration of SAP S/4HANA FICO with Sales & Distribution (SD)</strong><ul><li>SD Enterprise Structure and Customer/Material Master Data</li><li>Define Revenue G/L Accounts, Condition Records</li><li>Order to Cash Cycle and Accounting Documents</li></ul>",
+        "<strong>Module 30: Projects And Interviews</strong><ul><li>Covering all the concepts with Project Work</li><li>Resume Preparation & Interview Question Preparation</li></ul>",
       ],
       conclusion:
-        "<strong>By the end of the course</strong>, learners will be able to navigate SAP confidently and perform key accounting transactions used in corporate finance roles.",
-      suggested: [
-        "SAP S4 HANA MM-Materials Management",
-        "Financial Data Certification:",
-        "GCC VAT",
-      ],
+        "<strong>Key Benefits of the Training:</strong><br>• Our complete training is constructed as per current industry standards.<br>• Live Project & Industrial Based Training.<br>• Led by Certified Expert & Competent Trainers.<br>• Easy to understand study material with Smart Labs access.<br>• Globally Recognized Course Completion Certificate.<br>• Personality Development, Resume Prep, and Interview Preparation classes.<br>• Dedicated training & placement assistance.",
+      suggested: [],
     },
     "SAP S4 HANA MM-Materials Management": {
       title: "SAP S4 HANA MM",
@@ -771,29 +790,6 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
       });
 
-      let suggestedHtml = "";
-      if (data.suggested) {
-        data.suggested.forEach((s) => {
-          suggestedHtml += `
-            <div class="suggested-card" onclick="openCourseCurriculum('${s}', '${categoryTitle}')" style="cursor: pointer;">
-              <h4>${s}</h4>
-            </div>
-          `;
-        });
-      }
-
-      let htmlSuggested = "";
-      if (suggestedHtml) {
-        htmlSuggested = `
-          <div class="suggested-courses" style="margin-top: 60px;">
-            <h3 style="text-align: center; margin-bottom: 30px; font-family: 'Playfair Display', serif;">Next Steps in Accounting</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-              ${suggestedHtml}
-            </div>
-          </div>
-        `;
-      }
-
       content.innerHTML = `
         <div class="breadcrumbs">Home / Courses / ${categoryTitle} / ${courseName}</div>
         <div class="curriculum-header">
@@ -805,7 +801,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="details-grid">
             ${subCardsHtml}
           </div>
-          ${htmlSuggested}
         </div>
       `;
     } else {
@@ -814,30 +809,12 @@ document.addEventListener("DOMContentLoaded", () => {
         listHtml += `<li>${item}</li>`;
       });
 
-      let suggestedHtml = "";
-      data.suggested.forEach((s) => {
-        suggestedHtml += `
-          <div class="suggested-card" onclick="openCourseCurriculum('${s}', '${categoryTitle}')" style="cursor: pointer;">
-            <h4>${s}</h4>
-          </div>
-        `;
-      });
-
       let metaInfoHtml = "";
       if (data.duration || data.fee) {
         metaInfoHtml = `
           <div class="course-meta-info" style="display: flex; gap: 30px; margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;">
             ${data.duration ? `<div><i class="far fa-clock"></i> <strong>Duration:</strong> ${data.duration}</div>` : ""}
             ${data.fee ? `<div><i class="fas fa-tag"></i> <strong>Course Fees:</strong> ${data.fee}</div>` : ""}
-          </div>
-        `;
-      }
-
-      let suggestedHeaderHtml = "";
-      if (suggestedHtml) {
-        suggestedHeaderHtml = `
-          <div class="suggested-courses">
-            ${suggestedHtml}
           </div>
         `;
       }
@@ -864,8 +841,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <i class="fab fa-x-twitter" style="margin-left: 15px; cursor: pointer;"></i>
             <i class="fab fa-pinterest-p" style="margin-left: 15px; cursor: pointer;"></i>
           </div>
-
-          ${suggestedHeaderHtml}
         </div>
       `;
     }
