@@ -481,6 +481,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "DCA – Diploma in Computer Application",
         "PGDCA – Post Graduate Diploma in Computer Applications",
         "Payroll Management with Tally, EPF & ESI",
+        "Gst Return Filing and income Tax Filing Master Course",
       ],
       suggested: [],
     },
@@ -539,6 +540,23 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       conclusion:
         "<strong>Suitable For:</strong> Accountants, HR Executives, B.Com/MBA Students. <br><strong>Career Opportunities:</strong> Payroll Executive | HR Payroll Officer | Compliance Executive",
+      suggested: [],
+    },
+    "Gst Return Filing and income Tax Filing Master Course": {
+      title: "Gst Return Filing and income Tax Filing Master Course",
+      duration: "1.5 to 3 Months (Online / Offline, Flexible batch timings available)",
+      description:
+        "<strong>Course Overview:</strong><br/>This comprehensive course is designed to provide practical knowledge of GST and Income Tax filing. Learn how to handle real-world taxation tasks, file returns, and ensure compliance with current tax laws. Ideal for students, job seekers, accountants, and business owners who want hands-on expertise in taxation.<br/><br/><strong>Course Objectives:</strong><br/>Understand GST structure and taxation system, File GST returns (GSTR-1, GSTR-3B, etc.), Handle input tax credit (ITC), Prepare and file Income Tax returns, Work on real-time client data, and Understand compliance and penalties.",
+      list: [
+        "🧾 <strong>Module 1: GST Fundamentals:</strong> Introduction to GST, Types of GST (CGST, SGST, IGST), GST registration process, GST portal overview",
+        "📊 <strong>Module 2: GST Return Filing:</strong> GSTR-1 (Sales Return), GSTR-3B (Monthly Return), Input Tax Credit (ITC), E-invoicing & E-way bill, GST reconciliation",
+        "💼 <strong>Module 3: Practical GST Training:</strong> Live GST portal filing, Real business case studies, Error handling & corrections",
+        "💰 <strong>Module 4: Income Tax Basics:</strong> Introduction to Income Tax, Types of taxpayers, Income heads (Salary, Business, etc.), Deductions (80C, 80D, etc.)",
+        "📄 <strong>Module 5: Income Tax Return Filing:</strong> ITR forms (ITR-1, ITR-2, ITR-3), Filing returns online, TDS & Form 26AS, Advance tax & self-assessment",
+        "🧠 <strong>Module 6: Advanced Practical Training:</strong> Real-time ITR filing, Tax planning strategies, Client handling, Compliance & notices",
+      ],
+      conclusion:
+        "<strong>👨‍🎓 Who Can Join?</strong><br/>B.Com / M.Com / MBA Students, Job seekers in accounting field, Accountants & professionals, Business owners, Anyone interested in taxation.<br/><br/><strong>🛠️ Tools Covered:</strong><br/>• GST Portal (www.gst.gov.in)<br/>• Income Tax Portal (www.incometax.gov.in)<br/>• Tally (optional integration)",
       suggested: [],
     },
     "Zoho Books:": {
