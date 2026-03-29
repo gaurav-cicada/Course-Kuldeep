@@ -1,4 +1,4 @@
-/* Interactivity for Sai Accountables Educational Training Institution */
+/* Interactivity for Accountables Educational Training Institution */
 
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Mobile Menu Toggle
@@ -630,42 +630,57 @@ document.addEventListener("DOMContentLoaded", () => {
       suggested: [],
     },
     "IAF(Indian And Foreign accounting)": {
-      title: "IAF(Indian And Foreign accounting)",
+      title: "IAF – Indian & Foreign Accounting Master Course",
+      duration: "3 to 6 Months (Online / Offline, Flexible batches available)",
       description:
-        "Comprehensive, job-oriented course designed to build foundations in manual and computerized accounting.",
+        "<strong>Course Overview:</strong><br>This course is designed to provide complete knowledge of both Indian Accounting and Foreign (International) Accounting practices. Learn how accounting works in India as well as in global markets like United Arab Emirates, Saudi Arabia, United Kingdom, and United States. This course focuses on practical training, real-time business scenarios, and global accounting standards, making you job-ready for both Indian and international careers.<br><br><strong>Course Objectives:</strong><br>By the end of this course, you will be able to: Understand Indian accounting concepts and taxation, Work with GST, TDS, and Income Tax, Learn foreign accounting practices and VAT systems, Understand international accounting standards (IFRS basics), Handle real-time accounting tasks for global clients, and Prepare financial statements as per global standards.",
       list: [
-        "Core accounting principles and financial statement preparation",
-        "Tally workflow: inventory, GST, TDS, and statutory reports",
-        "QuickBooks and Peachtree for international accounting",
-        "Payroll processing and statutory compliance",
-        "Real-time accounting projects with practical scenarios",
+        "🇮🇳 <strong>Module 1: Indian Accounting Fundamentals:</strong> Basics of Accounting, Journal, Ledger, Trial Balance, Final Accounts, Accounting standards (basic overview)",
+        "📊 <strong>Module 2: Indian Taxation:</strong> GST (Goods & Services Tax), Income Tax Filing, TDS concepts, Practical return filing",
+        "💻 <strong>Module 3: Accounting Software:</strong> Tally with GST, Excel for accounting, Practical data entry & reporting",
+        "🌍 <strong>Module 4: Foreign Accounting Fundamentals:</strong> Introduction to International Accounting, IFRS (Basics), Differences between Indian GAAP & IFRS, Currency & foreign transactions",
+        "🧾 <strong>Module 5: GCC & Foreign Taxation:</strong> VAT in GCC countries, VAT return filing, International compliance basics",
+        "💼 <strong>Module 6: Practical Training:</strong> Real-time accounting entries, Client-based scenarios, Invoice, billing & reconciliation",
+        "🧠 <strong>Module 7: Advanced & Job-Oriented Skills:</strong> Financial statement preparation, MIS Reporting, Bank reconciliation, Client handling & communication",
       ],
       conclusion:
-        "<strong>By the end of the course</strong>, you will build a strong career in accounting with exposure to multiple software platforms.",
-      suggested: [
-        "Tally Prime with GST",
-        "GCC VAT",
-        "SAP S4 HANA FICO- Finance and Controlling",
-      ],
+        "<strong>👨‍🎓 Who Can Join?</strong><br>B.Com / M.Com / MBA Students, Job seekers in accounting field, Accountants looking for abroad jobs, Freshers & working professionals, Anyone interested in global accounting.",
+      suggested: [],
     },
     "GCC VAT": {
-      title: "GCC VAT",
+      title: "GCC VAT Master Course – UAE, Saudi & Gulf Taxation Training",
+      duration: "1 to 2 Months (Online / Offline, Flexible batches available)",
       description:
-        "Practical knowledge of Tally with focus on GCC VAT compliance for Gulf countries.",
+        "<strong>Course Overview:</strong><br>This course is designed to provide complete practical knowledge of VAT (Value Added Tax) applicable in GCC countries. Learn how taxation works in countries like United Arab Emirates, Saudi Arabia, Qatar, and Oman. Gain hands-on experience in VAT registration, return filing, compliance, and real-world business scenarios — making you job-ready for Gulf accounting roles.<br><br><strong>Course Objectives:</strong><br>By the end of this course, you will be able to: Understand GCC VAT structure and regulations, Register businesses for VAT in GCC countries, File VAT returns accurately, Handle input/output VAT calculations, Maintain VAT records and compliance, and Work on real-time VAT case studies.",
       list: [
-        "Accounting fundamentals and Tally navigation",
-        "Company creation and ledger management",
-        "Inventory vouchers and purchase/sales management",
-        "GCC VAT setup and compliance transactions",
-        "Payroll and Bank Reconciliation (BRS)",
+        "🧾 <strong>Module 1: VAT Fundamentals:</strong> Introduction to VAT, VAT in GCC countries, VAT concepts & terminology, Difference between VAT & GST",
+        "🌍 <strong>Module 2: GCC VAT Framework:</strong> VAT laws in UAE & Saudi Arabia, Taxable vs exempt supplies, Zero-rated supplies, VAT registration criteria",
+        "📊 <strong>Module 3: VAT Calculations:</strong> Input VAT vs Output VAT, VAT payable calculation, Reverse charge mechanism, Adjustments & corrections",
+        "📄 <strong>Module 4: VAT Return Filing:</strong> VAT return formats, Filing returns (UAE & Saudi portals), Deadlines & compliance, Penalties & fines",
+        "💼 <strong>Module 5: Practical Training:</strong> Real-time VAT return filing, Case studies (trading & service companies), Invoice preparation as per GCC VAT rules",
+        "🧠 <strong>Module 6: Advanced Concepts:</strong> VAT audit basics, Record keeping requirements, VAT for imports & exports, Multi-country VAT scenarios",
       ],
       conclusion:
-        "<strong>By the end of the course</strong>, you will be prepared for VAT-compliant accounting roles in GCC countries.",
-      suggested: [
-        "Tally Prime with GST",
-        "Financial Data Certification:",
-        "IAF(Indian And Foreign accounting)",
+        "<strong>👨‍🎓 Who Can Join?</strong><br>B.Com / M.Com / MBA Students, Accountants & Finance professionals, Job seekers targeting Gulf countries, Business owners dealing with GCC clients, Anyone interested in international taxation.",
+      suggested: [],
+    },
+    "Quick Books": {
+      title: "QuickBooks Accounting Master Course",
+      duration: "1 to 2 Months (Online / Offline, Flexible batch timings)",
+      description:
+        "<strong>Course Overview:</strong><br>This course is designed to provide complete hands-on training in QuickBooks, one of the world’s most widely used accounting software developed by Intuit. Learn how to manage business accounts, track income & expenses, generate reports, and handle real-time accounting tasks using QuickBooks. Ideal for students, accountants, freelancers, and business owners who want practical accounting skills.<br><br><strong>Course Objectives:</strong><br>By the end of this course, you will be able to: Understand QuickBooks interface and features, Create and manage company accounts, Record sales, purchases, and expenses, Manage customers and vendors, Generate financial reports, and Handle real-time business transactions.",
+      list: [
+        "🧾 <strong>Module 1: Introduction to QuickBooks:</strong> Overview of QuickBooks, Types (QuickBooks Online & Desktop), Company setup",
+        "📊 <strong>Module 2: Basic Accounting in QuickBooks:</strong> Chart of Accounts, Journal Entries, Invoices & Billing, Expense tracking",
+        "💼 <strong>Module 3: Sales & Purchase Management:</strong> Customer management, Vendor management, Purchase orders, Payment tracking",
+        "📦 <strong>Module 4: Banking & Reconciliation:</strong> Bank transactions, Bank reconciliation, Online banking integration",
+        "📄 <strong>Module 5: Reports & Financial Statements:</strong> Profit & Loss Statement, Balance Sheet, Cash Flow Reports, Custom reports",
+        "🌍 <strong>Module 6: Advanced Features:</strong> Multi-currency accounting, Tax setup (basic GST/VAT overview), Payroll basics, Automation features",
+        "🧠 <strong>Module 7: Practical Training:</strong> Real-time data entry, Case studies (service & trading business), Live projects",
       ],
+      conclusion:
+        "<strong>👨‍🎓 Who Can Join?</strong><br>B.Com / M.Com / MBA Students, Accountants & finance professionals, Freelancers & remote workers, Small business owners, Anyone interested in accounting software.",
+      suggested: [],
     },
     "Power BI & SQL": {
       title: "Power BI & SQL",
@@ -835,9 +850,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p style="font-size: 18px; line-height: 1.6;">${data.conclusion}</p>
           
           <div class="curriculum-social" style="text-align: right; margin: 40px 0;">
-            <i class="fab fa-facebook-f" style="margin-left: 15px; cursor: pointer;"></i>
             <i class="fab fa-x-twitter" style="margin-left: 15px; cursor: pointer;"></i>
-            <i class="fab fa-pinterest-p" style="margin-left: 15px; cursor: pointer;"></i>
           </div>
         </div>
       `;
